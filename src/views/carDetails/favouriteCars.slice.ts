@@ -1,5 +1,4 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { Console } from "console";
 
 const favouriteCarsSlice= createSlice({
     name: 'favouriteCars',
