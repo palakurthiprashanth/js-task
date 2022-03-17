@@ -1,6 +1,6 @@
 import CarsContainer from "./CarsContainer";
 import { defaultInitialState } from "../../utils/mockStore";
-import { render as Trender } from "@testing-library/react"
+import { render } from "@testing-library/react"
 import userEvent from "@testing-library/user-event";
 import { BrowserRouter as Router} from 'react-router-dom';
 import { useAppDispatch, useAppSelector} from "../../app/hooks";
@@ -19,7 +19,7 @@ describe('should test cars container', () => {
        
     });
     test("should test side filter", () => {
-      const { getByTestId, getAllByRole, getByRole }= Trender(
+      const { getByTestId, getAllByRole, getByRole }= render(
         <Router>
           <CarsContainer/>
         </Router>
@@ -54,7 +54,7 @@ describe('should test cars container', () => {
     });
   
     test('should test car list header', async() => {
-      const { getByText }= Trender(
+      const { getByText }= render(
         <Router>
         <CarsContainer/>
       </Router>
@@ -66,7 +66,7 @@ describe('should test cars container', () => {
     });
   
     test('pagination results', () => {
-      const { getByText, getByTestId, getByRole }= Trender(
+      const { getByText, getByTestId, getByRole }= render(
         <Router>
         <CarsContainer/>
       </Router>
@@ -81,7 +81,7 @@ describe('should test cars container', () => {
     });
   
     test('should load carItemshort component', () => {
-      const { getAllByTestId }= Trender(
+      const { getAllByTestId }= render(
         <Router>
         <CarsContainer/>
       </Router>
@@ -94,7 +94,7 @@ describe('should test cars container', () => {
         const selectorData= {...defaultInitialState.allCars, ...defaultInitialState.allCarColors, ...defaultInitialState.allCarManufacturers }
         selectorData.isError= true;
         mockedSelector.mockImplementation(() => selectorData);
-        const { getByTestId }= Trender(
+        const { getByTestId }= render(
           <Router>
           <CarsContainer/>
         </Router>
