@@ -1,0 +1,19 @@
+.pagination {
+
+    &__buttons {
+      display: flex;
+      justify-content: center;
+      margin-top: $s-24;
+  
+      .button {
+        padding: 0 $s-24 !important;
+        font-size: $f-14;
+        cursor: pointer;
+      }
+  
+      span {
+        padding: 0 $s-24;
+        font-size: $f-14;
+      }
+    }
+  }

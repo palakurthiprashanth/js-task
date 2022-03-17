@@ -1,0 +1,22 @@
+.button {
+    padding-top: $s-8;
+    padding-bottom: $s-8;
+    width: 128px;
+    background: $light-orange;
+    color: $white;
+    font-size: 12px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+  
+    &:active {
+      background: $light-green;
+    }
+  
+    &.button-as-link {
+      padding: 0;
+      background: inherit;
+      border: none;
+      width: auto;
+    }
+  }

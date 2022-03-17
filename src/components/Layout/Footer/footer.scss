@@ -1,0 +1,10 @@
+.car-app-footer {
+    display: flex;
+    height: $h-80;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #eee;
+    position: absolute;
+    bottom: -80px;
+    width: 100%;
+  }

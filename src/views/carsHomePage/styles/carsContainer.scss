@@ -1,0 +1,36 @@
+.cars-container {
+    padding: 24px;
+    display: flex;
+  
+    &__side-bar {
+      width: 350px;
+      position: sticky;
+      position: -webkit-sticky;
+      height: 100px;
+      top: 115px;
+    } 
+  
+    &__main-content {
+      margin-left: 24px;
+      width: calc(100% - 350px);
+  
+      .car-list-header {
+        display: flex;
+        align-items: center;
+  
+        .car-list-header__cars-info {
+          font-size: 18px;
+        }
+    
+        h3 {
+          margin-top: 0;
+          margin-bottom: 12px;
+          font-weight: bold;
+        }
+        .car-list-header__sort-by {
+          margin-left: auto;
+        }
+      }
+    }
+  }
+  

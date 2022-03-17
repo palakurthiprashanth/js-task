@@ -1,0 +1,29 @@
+body {
+  background: #fff;
+  margin: 0;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  color: #4A4A4A;
+}
+
+.app-container {
+  position: relative;
+  min-height: calc(100vh - 80px);
+  font-size: 14px;
+
+  a, .link {
+    color: #EA7F28;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:disabled {
+      opacity: 0.65;
+      &:hover {
+        text-decoration: none;
+        cursor: default;
+      }
+    }
+  }
+}

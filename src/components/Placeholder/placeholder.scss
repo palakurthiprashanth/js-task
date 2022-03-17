@@ -1,0 +1,64 @@
+.placeholder {
+    &__item {
+      padding: $s-12;
+      border: 1px solid #eee;
+      margin-bottom: $s-12;
+      display: flex;
+      line-height: 1;
+    }
+  
+    &__car-details {
+      padding: 0 $s-24;
+      font-size: $f-14;
+      width: calc(100% - 125px);
+    }
+  
+    &__car-left-image {
+      width: 125px;
+      height: 70px;
+      background: #eee;
+    }
+  
+    &__car-detail-line1, &__car-detail-line2, &__car-detail-line3 {
+      background: #eee;
+      color: #eee;
+    } 
+  
+    &__car-detail-line1 {
+      font-size: 20px;
+      font-weight: bold;
+      width: 60%;
+    }
+  
+    &__car-detail-line2 {
+      margin: 8px 0;
+      width: 60%;
+    }
+  
+    &__car-detail-line3 {
+      width: 10%;
+      margin-top: $s-12;
+    }
+  
+    // &__animated-background {
+    //   display: flex;
+    //   width: 100%;
+    //   animation-duration: 1s;
+    //   animation-fill-mode: forwards;
+    //   animation-iteration-count: infinite;
+    //   animation-name: placeHolderAnimation;
+    //   animation-timing-function: linear;
+    //   background: #f6f7f8;
+    //   background: linear-gradient(to right, #f1f1f1 8%, #dddddd 18%, #f1f1f1 33%);
+    //   background-size: 800px 104px;
+    // }
+  }
+  
+  // @keyframes placeHolderAnimation{
+  //   0%{
+  //       background-position: -300px 0
+  //   }
+  //   100%{
+  //       background-position: 300px 0
+  //   }
+  // }
