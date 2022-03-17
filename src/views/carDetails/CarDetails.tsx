@@ -1,13 +1,15 @@
-import React, { useEffect } from "react";
-import Banner from "../../components/Banner";
-import Button from "../../components/Button";
-import { useAppDispatch, useAppSelector } from "../../app/hooks";
-import SomethingWentWrong from "../somethingWentWrong/SomethingWentWrong";
+import { useEffect } from "react";
 import { useParams } from 'react-router-dom';
-
+import { useAppDispatch, useAppSelector } from "../../app/hooks";
 import { carById, favouriteCars } from "../../app/store";
+
 import { getCarDetailsById } from "../../views/carDetails/carById.slice";
 import { updateFavouriteCar, checkIfCarExistInFavourite } from "../../views/carDetails/favouriteCars.slice";
+
+import Banner from "../../components/Banner";
+import Button from "../../components/Button";
+import SomethingWentWrong from "../somethingWentWrong/SomethingWentWrong";
+
 
 const CarDetails= (): JSX.Element => {
     const blockname = 'car-details-container';

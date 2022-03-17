@@ -1,16 +1,17 @@
-import React, { useState, useEffect } from "react";
+import  { useState, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
 import { useAppDispatch, useAppSelector } from "../../app/hooks";
-import CarList from "./CarList";
-import CarListHeader from "./CarListHeader";
-import SideFilter from "../../components/SideFilter";
-import Pagination from "../../components/Pagination";
-import SomethingWentWrong from "../somethingWentWrong/SomethingWentWrong";
 
 import { allCars, allCarColors, allCarManufacturers } from "../../app/store";
 import { getCarsByPage } from "./slices/carsContainer.slice";
 import { getAllCarColors  } from "./slices/carsColor.slice";
 import { getAllCarManufacturers } from "./slices/carManufacturers.slice";
+
+import CarList from "./CarList";
+import CarListHeader from "./CarListHeader";
+import SideFilter from "../../components/SideFilter";
+import Pagination from "../../components/Pagination";
+import SomethingWentWrong from "../somethingWentWrong/SomethingWentWrong";
 
 
 type Option= {

@@ -34,7 +34,7 @@ describe("Car Details", () => {
         expect(dispatch).toHaveBeenCalled();
     });
 
-    test('if car is not in favourites', () => {
+    test('if car is not in favourites save button should be visible', () => {
         const favourite= {
             ...defaultInitialState.favouriteCars,
             isCarExistInFavourite: false 
@@ -56,7 +56,7 @@ describe("Car Details", () => {
         });
     });
 
-    test('if car is in favourites', () => {
+    test('if car is in favourites remove button should be visible', () => {
         const favourite= {
             ...defaultInitialState.favouriteCars,
             isCarExistInFavourite: true 
